@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:id="@+id/bag_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            tools:src="@android:color/darker_gray" />
+        <LinearLayout
+            android:id="@+id/bag_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toEndOf="@id/photo"
+            android:layout_toRightOf="@id/photo"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tulisan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/tulisan1"/>
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/heroes_name" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/bag_quate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bag_nama"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/photo"
+            android:layout_toRightOf="@+id/photo"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tulisan2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@string/tulisan2" />
+            <TextView
+                android:id="@+id/quote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/mean" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bag_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bag_list"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tulisan3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="@string/tulisan3" />
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            tools:text="@string/detail" />
+        <!--        <TableLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="16dp"-->
+        <!--            android:layout_marginRight="16dp"-->
+        <!--            android:layout_marginBottom="16dp">-->
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="attack strong to" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/strong"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/attack" />-->
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="defence weak to" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/weak"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/weak" />-->
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="base damage" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/attack"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/damage" />-->
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="base star generation" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/star_drop"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/star_generation" />-->
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="base star absorption" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/star_abs"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/star_absorption" />-->
+        <!--            </TableRow>-->
+
+        <!--            <TableRow-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginBottom="8dp">-->
+        <!--                <TextView-->
+        <!--                    style="@style/TextSpec.Field"-->
+        <!--                    android:text="base death rate" />-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/death"-->
+        <!--                    style="@style/TextSpec.Value"-->
+        <!--                    android:text="@string/death_rate" />-->
+        <!--            </TableRow>-->
+        <!--        </TableLayout>-->
+    </LinearLayout>
+</RelativeLayout>

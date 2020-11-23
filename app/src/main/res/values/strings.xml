@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FGO Class</string>
+    <string name="mean">mean</string>
+    <string name="heroes_name">name</string>
+
+    <string name="about_email">deadreaperco@gmail,com</string>
+    <string name="about_name">Aldi Mulia WIjaya</string>
+    <string name="tulisan2">Mean</string>
+    <string name="tulisan1">Nama</string>
+    <string name="tulisan3">Detail</string>
+    <string name="detail">detail</string>
+
+</resources>
